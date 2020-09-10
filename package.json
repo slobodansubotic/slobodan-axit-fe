@@ -1,0 +1,29 @@
+{
+  "name": "slobodan-axit-fe",
+  "version": "1.0.0",
+  "description": "Template for web site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slobodansubotic/slobodan-axit-fe.git"
+  },
+  "author": "Slobodan Subotic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slobodansubotic/slobodan-axit-fe/issues"
+  },
+  "homepage": "https://github.com/slobodansubotic/slobodan-axit-fe#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
