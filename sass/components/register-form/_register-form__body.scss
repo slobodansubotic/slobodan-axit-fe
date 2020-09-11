@@ -1,0 +1,34 @@
+.c-register-form__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-white;
+  padding: 3.2rem 0 4.8rem 0;
+
+  input {
+    border: none;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 1, 0.16));
+    padding: 0 1.2rem;
+    line-height: 3.1rem;
+    width: 28.5rem;
+    font-size: $font-xsm;
+    color: $color-grey-5;
+    font-weight: 400;
+    font-family: $font-paragraph;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+    
+    &:focus {
+      outline: $color-orange-lighter auto 1px;
+    }
+
+    &::placeholder {
+      font-size: $font-xsm;
+      color: $color-grey-3;
+      font-weight: 400;
+      font-family: $font-paragraph;
+    }
+  }
+}

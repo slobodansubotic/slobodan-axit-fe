@@ -1,0 +1,12 @@
+.c-hero__form {
+  justify-self: center;
+
+  @include mq($tablet-portrait, min) {
+    justify-self: end;
+    margin-right: 3rem;
+  }
+
+  @include mq($laptop, min) {
+    margin-right: 0;
+  }
+}

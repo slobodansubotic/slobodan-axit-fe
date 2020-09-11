@@ -1,0 +1,16 @@
+.c-hero__content {
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem;
+
+  @include mq($tablet-portrait, min) {
+    margin: 0 3rem;
+  }
+
+  @include mq($laptop, min) {
+    margin: 0;
+  }
+}

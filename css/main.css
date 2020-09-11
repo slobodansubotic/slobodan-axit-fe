@@ -54,3 +54,217 @@ html {
   src: url(../assets/fonts/raleway/Raleway-Bold.ttf);
   font-weight: 700;
   font-style: normal; }
+
+.u-max-width-wrapper {
+  width: 100%;
+  max-width: 110rem;
+  margin: auto; }
+
+.u-divider {
+  display: inline-block;
+  height: 0.1rem;
+  width: 6.4rem; }
+
+.u-divider--white {
+  background-color: #fff; }
+
+.u-divider--orange {
+  background-color: #ff8b38; }
+
+.u-button {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  line-height: 3.5rem;
+  padding: 0 3rem;
+  cursor: pointer; }
+
+.u-button--transparent {
+  border: 0.1rem solid #fff; }
+
+.u-button--orange {
+  background-color: #ff8b38; }
+
+.c-hero {
+  background: url(../assets/images/hero.png) no-repeat center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 1200px) {
+    .c-hero {
+      min-height: 64.1rem; } }
+  .c-hero .u-max-width-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end; }
+    @media screen and (min-width: 600px) {
+      .c-hero .u-max-width-wrapper {
+        margin: 5rem auto; } }
+    @media screen and (min-width: 1200px) {
+      .c-hero .u-max-width-wrapper {
+        margin: auto; } }
+
+.c-hero__content {
+  min-height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 3rem; }
+  @media screen and (min-width: 600px) {
+    .c-hero__content {
+      margin: 0 3rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-hero__content {
+      margin: 0; } }
+
+.c-hero__logo img {
+  height: 4rem; }
+  @media screen and (min-width: 1200px) {
+    .c-hero__logo img {
+      height: 6rem; } }
+
+.c-hero__heading {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+  @media screen and (min-width: 1200px) {
+    .c-hero__heading {
+      font-size: 3.6rem; } }
+
+.c-hero__paragraph {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif; }
+  @media screen and (min-width: 1200px) {
+    .c-hero__paragraph {
+      font-size: 1.6rem; } }
+
+.c-hero__form {
+  justify-self: center; }
+  @media screen and (min-width: 600px) {
+    .c-hero__form {
+      justify-self: end;
+      margin-right: 3rem; } }
+  @media screen and (min-width: 1200px) {
+    .c-hero__form {
+      margin-right: 0; } }
+
+.c-register-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  @media screen and (min-width: 600px) {
+    .c-register-form {
+      max-width: 36rem; } }
+
+.c-register-form__header {
+  line-height: 5.4rem;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .c-register-form__header {
+      border-radius: 0.3rem 0.3rem 0 0; } }
+  .c-register-form__header span {
+    color: #ff9b51; }
+
+.c-register-form__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 3.2rem 0 4.8rem 0; }
+  .c-register-form__body input {
+    border: none;
+    -webkit-filter: drop-shadow(0 1px 0 rgba(0, 0, 1, 0.16));
+            filter: drop-shadow(0 1px 0 rgba(0, 0, 1, 0.16));
+    padding: 0 1.2rem;
+    line-height: 3.1rem;
+    width: 28.5rem;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif; }
+    .c-register-form__body input:not(:last-child) {
+      margin-bottom: 3.5rem; }
+    .c-register-form__body input:focus {
+      outline: #ff9b51 auto 1px; }
+    .c-register-form__body input::-webkit-input-placeholder {
+      font-size: 1.4rem;
+      color: #bdbdbd;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+    .c-register-form__body input::-moz-placeholder {
+      font-size: 1.4rem;
+      color: #bdbdbd;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+    .c-register-form__body input:-ms-input-placeholder {
+      font-size: 1.4rem;
+      color: #bdbdbd;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+    .c-register-form__body input::-ms-input-placeholder {
+      font-size: 1.4rem;
+      color: #bdbdbd;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+    .c-register-form__body input::placeholder {
+      font-size: 1.4rem;
+      color: #bdbdbd;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+
+.c-register-form__footer {
+  line-height: 5.4rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  background-color: #ff9b51;
+  text-align: center;
+  cursor: pointer; }
+  @media screen and (min-width: 600px) {
+    .c-register-form__footer {
+      border-radius: 0 0 0.3rem 0.3rem; } }

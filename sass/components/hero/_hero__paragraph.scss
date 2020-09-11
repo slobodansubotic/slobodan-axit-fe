@@ -1,0 +1,11 @@
+.c-hero__paragraph {
+  font-size: $font-xsm;
+  line-height: 2.3rem;
+  color: $color-white;
+  font-weight: 300;
+  font-family: $font-heading;
+
+  @include mq($laptop, min) {
+    font-size: $font-md;
+  }
+}
