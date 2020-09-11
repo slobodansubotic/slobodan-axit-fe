@@ -1,0 +1,39 @@
+.c-navigation__menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  
+  @include mq($tablet-landscape, min) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;  
+    background: $color-white;
+    border-radius: 0.3rem;
+
+    transition: all 150ms ease-in-out;
+  
+    &:not(:last-child) {
+      margin-block-end: 0.5rem;
+    }
+  }
+}
+
+.c-navigation__menu-toggle:checked ~ .c-navigation__menu-icon span {
+  
+  &:nth-child(1) {
+    transform: translateY(0.9rem) rotateZ(-45deg);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+  
+  &:nth-child(3) {
+    transform: translateY(-0.9rem) rotateZ(45deg);
+  }
+}

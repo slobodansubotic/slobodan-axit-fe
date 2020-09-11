@@ -1,0 +1,19 @@
+.c-navigation {
+  background-color: $color-black;
+
+  .u-max-width-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4.2rem;
+    color: $color-grey-1;
+
+    
+    @include mq($tablet-landscape, min) {
+      flex-direction: row;
+      height: initial;
+    }
+  }
+}
