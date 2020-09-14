@@ -1,0 +1,10 @@
+.c-hero__logo {
+
+  img {
+    height: 4rem;
+    
+    @include mq($laptop, min) {
+      height: 6rem;      
+    }
+  }
+}

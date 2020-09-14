@@ -1,0 +1,14 @@
+.c-register-form__footer {
+  line-height: 5.4rem;
+  font-size: $font-sm;
+  color: $color-white;
+  font-weight: 600;
+  font-family: $font-paragraph;
+  background-color: $color-orange-lighter;
+  text-align: center;
+  cursor: pointer;
+  
+  @include mq($tablet-portrait, min) {
+    border-radius: 0 0 0.3rem 0.3rem;
+  }
+}

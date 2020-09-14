@@ -1,0 +1,11 @@
+.c-hero__heading {
+  font-family: $font-heading;
+  color: $color-white;
+  font-size: $font-xlg;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  @include mq($laptop, min) {
+    font-size: $font-xxlg;
+  }
+}
