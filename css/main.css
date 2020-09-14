@@ -55,7 +55,7 @@ html {
   font-weight: 700;
   font-style: normal; }
 
-.u-max-width-wrapper {
+.container {
   width: 100%;
   max-width: 110rem;
   margin: auto; }
@@ -99,7 +99,7 @@ html {
   @media screen and (min-width: 1200px) {
     .c-hero {
       min-height: 64.1rem; } }
-  .c-hero .u-max-width-wrapper {
+  .c-hero .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
@@ -107,10 +107,10 @@ html {
         -ms-flex-align: end;
             align-items: end; }
     @media screen and (min-width: 600px) {
-      .c-hero .u-max-width-wrapper {
+      .c-hero .container {
         margin: 5rem auto; } }
     @media screen and (min-width: 1200px) {
-      .c-hero .u-max-width-wrapper {
+      .c-hero .container {
         margin: auto; } }
 
 .c-hero__content {
@@ -152,14 +152,14 @@ html {
     .c-hero__heading {
       font-size: 3.6rem; } }
 
-.c-hero__paragraph {
+.c-hero__text {
   font-size: 1.4rem;
   line-height: 2.3rem;
   color: #fff;
   font-weight: 300;
   font-family: "Raleway", sans-serif; }
   @media screen and (min-width: 1200px) {
-    .c-hero__paragraph {
+    .c-hero__text {
       font-size: 1.6rem; } }
 
 .c-hero__form {
