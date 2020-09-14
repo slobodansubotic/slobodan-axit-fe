@@ -1,0 +1,30 @@
+.c-tabs-with-effect__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+
+  @include mq($laptop, min) {
+    grid-column: 3;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: $color-black;
+    font-weight: 700;
+    font-family: $font-paragraph;
+    margin-bottom: 4.6rem;
+  }
+
+  p {
+    font-size: $font-xsm;
+    line-height: 20px;
+    color: $color-grey-4;
+    font-weight: 400;
+    font-family: $font-paragraph;
+    margin-bottom: 2rem;
+  }
+
+  .u-button {
+    margin-top: 2.8rem;
+  }
+}
