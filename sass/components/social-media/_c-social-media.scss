@@ -1,0 +1,26 @@
+.c-social-media {
+  background-color: $color-white;
+  
+  .container {
+    min-height: 10.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sm-text"
+      "sm-icons";
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+
+    @include mq($tablet-landscape, min) {
+      grid-template-columns: auto minmax(30rem, 63.4rem);
+      grid-template-areas: "sm-text sm-icons";
+      gap: 6rem;
+      padding: 1rem 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+    }
+  }
+}
