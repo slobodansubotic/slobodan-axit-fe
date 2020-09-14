@@ -1,7 +1,7 @@
 .c-navigation {
   background-color: $color-black;
 
-  .u-max-width-wrapper {
+  .container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,11 @@
     @include mq($tablet-landscape, min) {
       flex-direction: row;
       height: initial;
+      padding: 0 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
     }
   }
 }

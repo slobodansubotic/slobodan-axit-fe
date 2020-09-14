@@ -55,20 +55,14 @@ html {
   font-weight: 700;
   font-style: normal; }
 
-.u-max-width-wrapper {
+.container {
   width: 100%;
   max-width: 110rem;
   margin: auto; }
-  @media screen and (min-width: 900px) {
-    .u-max-width-wrapper {
-      padding: 0 10% 0 10%; } }
-  @media screen and (min-width: 1200px) {
-    .u-max-width-wrapper {
-      padding: 0; } }
 
 .c-navigation {
   background-color: #000; }
-  .c-navigation .u-max-width-wrapper {
+  .c-navigation .container {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,12 +80,16 @@ html {
     height: 4.2rem;
     color: #f5f5f5; }
     @media screen and (min-width: 900px) {
-      .c-navigation .u-max-width-wrapper {
+      .c-navigation .container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
-        height: initial; } }
+        height: initial;
+        padding: 0 10%; } }
+    @media screen and (min-width: 1200px) {
+      .c-navigation .container {
+        padding: 0; } }
 
 .c-navigation__logo img {
   height: 2rem; }
