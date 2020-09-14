@@ -1,0 +1,32 @@
+.u-divider {
+  display: inline-block;
+  height: 0.1rem;
+  width: 6.4rem;
+}
+
+.u-divider--white {
+  background-color: $color-white;
+}
+
+.u-divider--orange {
+  background-color: $color-orange-light;
+}
+
+.u-button {
+  display: inline-block;
+  font-size: $font-sm;
+  color: $color-white;
+  font-weight: 600;
+  font-family: $font-paragraph;
+  line-height: 3.5rem;
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+.u-button--transparent {
+  border: 0.1rem solid $color-white;
+}
+
+.u-button--orange {
+  background-color: $color-orange-light;
+}

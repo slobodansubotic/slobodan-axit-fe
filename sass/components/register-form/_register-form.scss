@@ -1,0 +1,10 @@
+.c-register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  @include mq($tablet-portrait, min) {
+    max-width: 36rem;
+  }
+}

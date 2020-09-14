@@ -1,0 +1,17 @@
+.c-register-form__header {
+  line-height: 5.4rem;
+  font-size: $font-xlg;
+  color: $color-grey-5;
+  font-weight: 700;
+  font-family: $font-paragraph;
+  background-color: $color-grey-1;
+  text-align: center;
+  
+  @include mq($tablet-portrait, min) {
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+
+  span {
+    color: $color-orange-lighter;
+  }
+}

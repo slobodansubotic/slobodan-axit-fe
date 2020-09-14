@@ -1,0 +1,24 @@
+.c-navigation {
+  background-color: $color-black;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4.2rem;
+    color: $color-grey-1;
+
+    
+    @include mq($tablet-landscape, min) {
+      flex-direction: row;
+      height: initial;
+      padding: 0 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+    }
+  }
+}

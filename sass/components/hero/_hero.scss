@@ -1,0 +1,25 @@
+.c-hero {
+  background: url(../assets/images/hero.png) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @include mq($laptop, min) {
+    min-height: 64.1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    align-items: end;
+    
+    @include mq($tablet-portrait, min) {
+      margin: 5rem auto;      
+    }
+    
+    @include mq($laptop, min) {
+      margin: auto;
+    }
+  }
+}
