@@ -87,6 +87,76 @@ html {
 .u-button--orange {
   background-color: #ff8b38; }
 
+.c-social-media {
+  background-color: #fff; }
+  .c-social-media .container {
+    min-height: 10.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sm-text" "sm-icons";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    padding: 1rem; }
+    @media screen and (min-width: 900px) {
+      .c-social-media .container {
+        grid-template-columns: auto minmax(30rem, 63.4rem);
+        grid-template-areas: "sm-text sm-icons";
+        gap: 6rem;
+        padding: 1rem 10%; } }
+    @media screen and (min-width: 1200px) {
+      .c-social-media .container {
+        padding: 0; } }
+
+.c-social-media__text {
+  grid-area: sm-text;
+  text-align: center; }
+  .c-social-media__text h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.8em; }
+  .c-social-media__text p {
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #86878b;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif; }
+  @media screen and (min-width: 900px) {
+    .c-social-media__text {
+      text-align: left; }
+      .c-social-media__text h2 {
+        font-size: 2rem; }
+      .c-social-media__text p {
+        font-size: 1.4rem; } }
+
+.c-social-media__icon-list {
+  grid-area: sm-icons;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 900px) {
+    .c-social-media__icon-list {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+.c-social-media__icon {
+  color: #ccc;
+  height: 3rem;
+  width: 3rem; }
+  @media screen and (min-width: 900px) {
+    .c-social-media__icon {
+      height: 4.4rem;
+      width: 4.4rem; } }
+
 .c-hero {
   background: url(../assets/images/hero.png) no-repeat center top;
   background-size: cover;

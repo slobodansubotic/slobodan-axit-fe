@@ -1,0 +1,10 @@
+.c-social-media__icon {
+  color: $color-grey-2;
+  height: 3rem;
+  width: 3rem;
+
+  @include mq($tablet-landscape, min) {
+    height: 4.4rem;
+    width: 4.4rem;
+  }
+}

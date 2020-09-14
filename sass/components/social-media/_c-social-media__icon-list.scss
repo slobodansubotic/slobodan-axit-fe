@@ -1,0 +1,10 @@
+.c-social-media__icon-list {
+  grid-area: sm-icons;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  @include mq($tablet-landscape, min) {
+    justify-content: space-between;
+  }
+}

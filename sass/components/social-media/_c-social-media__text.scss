@@ -1,0 +1,33 @@
+.c-social-media__text {
+  grid-area: sm-text;
+  text-align: center;
+
+  h2 {
+    font-size: $font-sm;
+    color: $color-grey-5;
+    font-weight: 700;
+    font-family: $font-paragraph;
+    line-height: 1.8em;
+  }
+
+  p {
+    font-size: $font-xxsm;
+    line-height: 20px;
+    color: $color-grey-4;
+    font-weight: 400;
+    font-family: $font-paragraph;
+  }
+
+    
+  @include mq($tablet-landscape, min) {
+    text-align: left;
+
+    h2 {
+      font-size: $font-xlg;
+    }
+
+    p {
+      font-size: $font-xsm;
+    }
+  }
+}
