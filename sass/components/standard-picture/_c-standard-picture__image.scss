@@ -1,0 +1,13 @@
+.c-standard-picture__image {
+  max-width: 45.3rem;
+  filter: drop-shadow(0 1.2rem 1rem rgba(0, 0, 0, 0.3));
+  justify-self: center;
+
+  @include mq($tablet-landscape, min) {
+    justify-self: end;
+  }
+
+  img {
+    width: 100%;
+  }
+}
