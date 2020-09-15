@@ -1,0 +1,15 @@
+.c-sub-list__icon {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid $color-orange-light;
+  color: $color-orange-light;
+
+  svg {
+    width: 1.8rem;
+    height: 1.4rem;
+    margin: auto;
+  }
+}

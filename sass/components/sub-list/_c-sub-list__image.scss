@@ -1,0 +1,14 @@
+.c-sub-list__image {
+  grid-area: image;
+  max-width: 52.5rem;
+  filter: drop-shadow(0 1.2rem 1rem rgba(0, 0, 0, 0.3));
+  justify-self: center;
+
+  @include mq($tablet-landscape, min) {
+    justify-self: start;
+  }
+
+  img {
+    width: 100%;
+  }
+}
