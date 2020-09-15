@@ -1,0 +1,26 @@
+.c-sub-list {
+  background-color: $color-white;
+  display: grid;
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "text"
+      "image";
+    padding: 3rem;
+
+    @include mq($tablet-landscape, min) {
+      grid-template-areas: "image text";
+      padding: 3rem 10%;
+      gap: 3rem;
+    }
+
+    @include mq($laptop, min) {
+      grid-template-areas: "image text";
+      grid-template-columns: auto 41.3rem;
+      padding: 0;
+      gap: 0;
+      margin-top: 11rem;
+    }
+  }
+}

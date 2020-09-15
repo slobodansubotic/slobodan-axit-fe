@@ -1,6 +1,6 @@
 .c-tabs-with-effect {
   background-color: $color-grey-1;
-  display: flex;
+  display: grid;
 
   @include mq($laptop, min) {
     min-height: 59.5rem;
