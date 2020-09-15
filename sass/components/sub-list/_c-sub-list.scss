@@ -2,6 +2,10 @@
   background-color: $color-white;
   display: grid;
 
+  @include mq($laptop, min) {
+    min-height: 59.7rem;
+  }
+
   .container {
     display: grid;
     grid-template-areas:

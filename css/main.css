@@ -578,6 +578,9 @@ html {
 .c-sub-list {
   background-color: #fff;
   display: grid; }
+  @media screen and (min-width: 1200px) {
+    .c-sub-list {
+      min-height: 59.7rem; } }
   .c-sub-list .container {
     display: grid;
     grid-template-areas: "text" "image";
