@@ -1,29 +1,27 @@
-.c-tabs-with-effect {
+.c-standard-picture {
   background-color: $color-grey-1;
   display: grid;
 
   @include mq($laptop, min) {
-    min-height: 59.5rem;
+    min-height: 52.5rem;
   }
 
   .container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    align-items: start;
     padding: 3rem;
 
     @include mq($tablet-landscape, min) {
+      grid-template-columns: 1fr 1fr;
       padding: 3rem 10%;
-      grid-template-columns: 11.2rem 40% auto;
-
+      gap: 3rem;
+      align-items: start;
     }
-    
+
     @include mq($laptop, min) {
+      grid-template-columns: 47.3rem auto;
       padding: 0;
-      margin-top: 14rem;
-      grid-template-columns: 11.2rem 10rem 48rem auto;
       gap: 0;
+      margin-top: 11rem;
     }
   }
 }
