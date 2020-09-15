@@ -1,0 +1,29 @@
+.c-tabs-with-effect {
+  background-color: $color-grey-1;
+  display: flex;
+
+  @include mq($laptop, min) {
+    min-height: 59.5rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+    padding: 3rem;
+
+    @include mq($tablet-landscape, min) {
+      padding: 3rem 10%;
+      grid-template-columns: 11.2rem 40% auto;
+
+    }
+    
+    @include mq($laptop, min) {
+      padding: 0;
+      margin-top: 14rem;
+      grid-template-columns: 11.2rem 10rem 48rem auto;
+      gap: 0;
+    }
+  }
+}

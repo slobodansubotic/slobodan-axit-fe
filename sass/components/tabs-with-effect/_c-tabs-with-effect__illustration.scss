@@ -1,0 +1,13 @@
+.c-tabs-with-effect__illustration {
+  max-width: 32rem;
+  justify-self: center;
+  
+  @include mq($tablet-landscape, min) {
+    justify-self: end;
+    margin-top: 2.5rem;
+  }
+
+  img {
+    width: 100%;
+  } 
+}

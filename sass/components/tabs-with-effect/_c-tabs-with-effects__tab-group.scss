@@ -1,0 +1,43 @@
+.c-tabs-with-effects__tab-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 11.2rem);
+  grid-gap: 0.1rem;
+  filter: drop-shadow(0px 0.1rem 0.15rem rgba(0,0,0,0.38));
+  
+  @include mq($tablet-landscape, min) {
+    grid-template-columns: 11.2rem;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11.2rem;
+    width: 11.2rem;
+    background-color: $color-grey-5;
+    color: $color-white;
+    font-size: $font-sm;
+    font-weight: 700;
+    font-family: $font-paragraph;
+
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: $color-orange-light;
+    }
+
+    &:first-child {
+
+      @include mq($tablet-landscape, min) {
+        border-radius: 0.3rem 0.3rem 0 0;
+      }
+    }
+
+    &:last-child {
+
+      @include mq($tablet-landscape, min) {
+        border-radius: 0 0 0.3rem 0.3rem;
+      }
+    }
+  }
+}
