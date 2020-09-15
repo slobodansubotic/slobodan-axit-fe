@@ -51,6 +51,12 @@ html {
 
 @font-face {
   font-family: 'Raleway';
+  src: url(../assets/fonts/raleway/Raleway-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway';
   src: url(../assets/fonts/raleway/Raleway-Bold.ttf);
   font-weight: 700;
   font-style: normal; }
@@ -220,7 +226,7 @@ html {
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase; }
   @media screen and (min-width: 1200px) {
     .c-hero__heading {
@@ -712,12 +718,100 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   border: 0.2rem solid #ff8b38;
   color: #ff8b38; }
   .c-sub-list__icon svg {
-    width: 1.8rem;
-    height: 1.4rem;
-    margin: auto; }
+    width: 1.8rem; }
+
+.c-why {
+  background-color: #fff;
+  display: grid; }
+  @media screen and (min-width: 1200px) {
+    .c-why {
+      min-height: 59.3rem; } }
+  .c-why .container {
+    max-width: 111.4rem;
+    display: grid;
+    justify-items: center;
+    padding: 3rem;
+    text-align: center; }
+    @media screen and (min-width: 900px) {
+      .c-why .container {
+        padding: 3rem 10%; } }
+    @media screen and (min-width: 1200px) {
+      .c-why .container {
+        padding: 0;
+        gap: 0;
+        margin-top: 11rem; } }
+    .c-why .container h1 {
+      font-size: 2rem;
+      color: #212121;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase; }
+      @media screen and (min-width: 900px) {
+        .c-why .container h1 {
+          font-size: 3.6rem; } }
+    .c-why .container h2 {
+      font-size: 2rem;
+      line-height: 24px;
+      color: #333;
+      font-weight: 700;
+      font-family: "Open Sans", sans-serif; }
+    .c-why .container p {
+      font-size: 1.4rem;
+      line-height: 20px;
+      color: #86878b;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif; }
+    .c-why .container .u-divider {
+      margin: 3rem 0; }
+
+.c-why__list {
+  display: grid;
+  gap: 4rem;
+  margin-top: 8rem;
+  width: 100%; }
+  @media screen and (min-width: 600px) {
+    .c-why__list {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 3.2rem; } }
+  @media screen and (min-width: 900px) {
+    .c-why__list {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); } }
+
+.c-why__list-item {
+  display: grid;
+  justify-items: center; }
+  .c-why__list-item .c-why__list-icon {
+    margin-bottom: 2.9rem; }
+  .c-why__list-item h2 {
+    margin-bottom: 2.9rem; }
+  .c-why__list-item:nth-child(1) svg {
+    width: 2.1rem; }
+  .c-why__list-item:nth-child(2) svg {
+    width: 3.5rem; }
+  .c-why__list-item:nth-child(3) svg {
+    width: 1.7rem; }
+
+.c-why__list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ff8b38;
+  color: #ff8b38; }
