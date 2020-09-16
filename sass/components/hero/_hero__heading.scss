@@ -2,7 +2,7 @@
   font-family: $font-heading;
   color: $color-white;
   font-size: $font-xlg;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 
   @include mq($laptop, min) {
