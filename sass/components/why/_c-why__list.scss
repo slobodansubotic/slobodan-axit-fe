@@ -1,0 +1,15 @@
+.c-why__list {
+  display: grid;  
+  gap: 4rem;
+  margin-top: 8rem;
+  width: 100%;
+
+  @include mq($tablet-portrait, min) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3.2rem;
+  }
+
+  @include mq($tablet-landscape, min) {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}

@@ -1,14 +1,10 @@
-.c-sub-list__icon {
+.c-why__list-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   border: 0.2rem solid $color-orange-light;
   color: $color-orange-light;
-
-  svg {
-    width: 1.8rem;
-  }
 }

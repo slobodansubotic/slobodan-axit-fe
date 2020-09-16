@@ -1,0 +1,33 @@
+.c-why__list-item {
+  display: grid;
+  justify-items: center;
+
+  .c-why__list-icon {
+    margin-bottom: 2.9rem;
+  }
+
+  h2 {
+    margin-bottom: 2.9rem;
+  }
+
+  &:nth-child(1) {
+
+    svg {
+      width: 2.1rem;
+    }
+  }
+
+  &:nth-child(2) {
+
+    svg {
+      width: 3.5rem;
+    }
+  }
+
+  &:nth-child(3) {
+
+    svg {
+      width: 1.7rem;
+    }
+  }
+}
