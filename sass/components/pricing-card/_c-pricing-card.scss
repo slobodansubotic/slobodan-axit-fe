@@ -1,0 +1,14 @@
+.c-pricing-card {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+
+  h2 {
+    font-size: $font-xlg;
+    line-height: 5.9rem;
+    color: $color-white;
+    font-weight: 700;
+    font-family: $font-paragraph;
+    background-color: $color-grey-5;
+  }
+}

@@ -1,0 +1,25 @@
+.c-pricing-card__price {
+  background-color: $color-grey-5;
+  margin-top: 0.1rem;
+  
+  h1 {
+    font-size: $font-xxxlg;
+    color: $color-white;
+    font-weight: 700;
+    height: 10rem;
+    font-family: $font-heading;
+
+    span {
+      font-size: $font-xxlg;
+    }
+  }
+
+  p {
+    font-size: $font-xsm;
+    color:$color-grey-7;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 5.1rem;
+    font-family: $font-paragraph;
+  }
+}
