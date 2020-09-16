@@ -1,0 +1,17 @@
+.c-reviews__list {
+  display: grid;  
+  gap: 4rem;
+  align-items: end;
+  margin-top: 5.5rem;
+  width: 100%;
+
+  @include mq($tablet-portrait, min) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 8rem;
+  }
+
+  @include mq($tablet-landscape, min) {
+    grid-template-columns: repeat(auto-fit, minmax(27.3rem, 1fr));
+    gap: 11.9rem;
+  }
+}
