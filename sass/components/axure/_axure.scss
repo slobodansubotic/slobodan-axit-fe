@@ -1,0 +1,54 @@
+.axure {
+  display: grid;
+  background: url(../assets/images/street.png) no-repeat center top;
+  background-size: cover;
+
+  @include mq($laptop, min) {
+    min-height: 32.5rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 3rem;
+
+    @include mq($tablet-landscape, min) {
+      padding: 3rem 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+      margin-top: 7.4rem;
+    }
+
+    h1 {
+      font-size: $font-xlg;
+      color: $color-white;
+      font-family: $font-heading;
+      font-weight: 300;
+      text-transform: uppercase;
+          
+      @include mq($laptop, min) {
+        font-size: $font-xxlg;
+      }
+    }
+
+    p {
+      font-size: $font-md;
+      color: $color-white;
+      font-family: $font-heading;
+      font-weight: 300;
+      opacity: 0.7;
+    }
+
+    .u-divider {
+      margin: 2.8rem 0 3.2rem;
+    }
+
+    .u-button {
+      margin-top: 3.3rem;
+    }
+  }
+}
