@@ -1,0 +1,17 @@
+  
+.c-pricing__card-list {
+  display: grid;  
+  gap: 4rem;
+  align-items: end;
+  margin-top: 8rem;
+  width: 100%;
+
+  @include mq($tablet-portrait, min) {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+  }
+
+  @include mq($tablet-landscape, min) {
+    grid-template-columns: repeat(auto-fit, minmax(34.3rem, 1fr));
+  }
+}
