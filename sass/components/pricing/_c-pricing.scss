@@ -1,0 +1,50 @@
+.c-pricing {
+  background-color: $color-grey-1;
+  display: grid;
+
+  @include mq($laptop, min) {
+    min-height: 88.4rem;
+  }
+
+  .container {
+    max-width: 110.9rem;
+    display: grid;
+    justify-items: center;
+    padding: 3rem;
+
+    @include mq($tablet-landscape, min) {
+      padding: 3rem 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+      gap: 0;
+      margin-top: 11rem;
+    }
+    
+    & > h1 {
+      font-size: $font-xlg;
+      color: $color-grey-6;
+      font-weight: 400;
+      font-family: $font-heading;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include mq($tablet-landscape, min) {
+        font-size: $font-xxlg;
+      }
+    }
+
+    & > p {
+      font-size: $font-xsm;
+      color: $color-grey-4;
+      font-weight: 400;
+      font-family: $font-paragraph;
+      text-align: center;
+    }
+
+    .u-divider {
+      margin: 3rem 0;
+    }
+  }
+}
