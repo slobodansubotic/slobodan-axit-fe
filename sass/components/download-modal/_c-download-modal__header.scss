@@ -1,0 +1,16 @@
+.c-download-modal__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: $color-orange-light;
+  color: $color-white;
+  border-radius: 0.3rem 0.3rem 0 0;
+
+  svg {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+  }
+}
