@@ -1,0 +1,53 @@
+.c-contact {
+  display: grid;
+  background-color: $color-white;
+  
+  @include mq($laptop, min) {
+    min-height: 63.1rem;
+  }
+
+  .container {
+    display: grid;
+    justify-items: center;
+    padding: 3rem;
+    max-width: 112.1;
+
+    @include mq($tablet-landscape, min) {
+      padding: 3rem 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+      margin-top: 11rem;
+    }
+
+    @include mq($laptop, min) {
+      margin-top: 11rem;
+    }
+    
+    h1 {
+      font-size: $font-xxlg;
+      color: $color-grey-6;
+      font-family: $font-heading;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: $font-xsm;
+      color: $color-grey-4;
+      font-weight: 400;
+      font-family: $font-paragraph;
+      text-align: center;
+    }
+
+    .u-divider {
+      margin: 2.6rem 0 2.8rem;
+    }
+
+    .u-button {
+      margin-top: 4.3rem;
+    }
+  }
+}
