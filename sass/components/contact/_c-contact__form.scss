@@ -33,27 +33,30 @@
     }
   }
 
-  input:nth-child(1) {
-    
-    @include mq($tablet-portrait, min) {
-      grid-column: 1;
-      grid-row: 1;
-    }
-  }
+  input {
 
-  input:nth-child(2) {
-    
-    @include mq($tablet-portrait, min) {
-      grid-column: 1;
-      grid-row: 2;
-    }
-  }
+    &:nth-child(1) {
 
-  input:nth-child(3) {
+      @include mq($tablet-portrait, min) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+
+    &:nth-child(2) {
     
-    @include mq($tablet-portrait, min) {
-      grid-column: 1;
-      grid-row: 3;
+      @include mq($tablet-portrait, min) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+    }
+    
+    &:nth-child(3) {
+      
+      @include mq($tablet-portrait, min) {
+        grid-column: 1;
+        grid-row: 3;
+      }
     }
   }
 
