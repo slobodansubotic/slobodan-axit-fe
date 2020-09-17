@@ -1,0 +1,13 @@
+.c-footer__icon-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 31.7rem;
+  margin-bottom: 1.5rem;
+
+  svg {
+    color: $color-grey-2;
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+}

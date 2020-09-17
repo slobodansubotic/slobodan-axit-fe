@@ -1,0 +1,29 @@
+.c-footer {
+  display: grid;
+  background-color: $color-black;
+  min-height: 9rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 3rem;
+
+    @include mq($tablet-landscape, min) {
+      padding: 3rem 10%;
+    }
+
+    @include mq($laptop, min) {
+      padding: 0;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: $font-xxsm;
+      color: $color-white;
+      font-weight: 400;
+      font-family: $font-paragraph;
+      opacity: 0.6;
+    }
+  }
+}
