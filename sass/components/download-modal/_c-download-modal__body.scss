@@ -1,0 +1,14 @@
+.c-download-modal__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  height: 20rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+
+  p {
+    font-family: $font-paragraph;
+    font-weight: 700;
+    font-size: $font-lg;
+  }
+}
