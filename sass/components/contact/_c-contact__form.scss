@@ -1,0 +1,68 @@
+.c-contact__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.9rem;
+  margin-top: 8rem;
+  align-items: start;
+  width: 100%;
+
+  @include mq($tablet-portrait, min) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.7rem;
+  }
+
+  input, textarea {
+    border: none;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 1, 0.16));
+    padding: 0 1.2rem;
+    line-height: 3.1rem;
+    font-size: $font-xsm;
+    color: $color-grey-5;
+    font-weight: 400;
+    font-family: $font-paragraph;
+    
+    &:focus {
+      outline: $color-orange-lighter auto 1px;
+    }
+
+    &::placeholder {
+      font-size: $font-xsm;
+      color: $color-grey-3;
+      font-weight: 400;
+      font-family: $font-paragraph;
+    }
+  }
+
+  input:nth-child(1) {
+    
+    @include mq($tablet-portrait, min) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  input:nth-child(2) {
+    
+    @include mq($tablet-portrait, min) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  input:nth-child(3) {
+    
+    @include mq($tablet-portrait, min) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+
+  textarea {
+
+    @include mq($tablet-portrait, min) {
+      grid-column: 2;
+      grid-row: 1 / span 3;
+      height: 100%;
+    }
+  }
+}
